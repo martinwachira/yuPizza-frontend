@@ -1,4 +1,5 @@
-[snapshot]: https://user-images.githubusercontent.com/60017194/82736655-18505700-9d34-11ea-8302-6b48bd8c0991.png "Logo Title Text 2"
+![alt text][logo]
+[logo]: https://user-images.githubusercontent.com/60017194/82736655-18505700-9d34-11ea-8302-6b48bd8c0991.png "app dashboard"
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
