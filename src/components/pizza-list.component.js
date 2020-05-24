@@ -16,7 +16,7 @@ export default class PizzaList extends Component {
 
   componentDidMount() {
     // axios.get('http://localhost:8000/api/pizzas')
-    axios.get('http://yupizza-backend.herokuapp.com/api/pizza')    
+    axios.get('https://yupizza-backend.herokuapp.com/api/pizza')    
       .then(res => {
         this.setState({ pizzas: res.data });
       })

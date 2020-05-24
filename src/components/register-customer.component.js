@@ -54,7 +54,7 @@ export default class RegisterCustomer extends Component {
       currentAddress: this.state.currentAddress
     };
     // axios.post('http://localhost:8000/api/addcustomer/', customer)
-    axios.post('http://yupizza-backend.herokuapp.com/api/addcustomer/', customer)
+    axios.post('https://yupizza-backend.herokuapp.com/api/addcustomer/', customer)
       .then(res => console.log(res.data));
     Swal.fire(
   'Welcome!',

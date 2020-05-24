@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+![alt text](https://user-images.githubusercontent.com/60017194/82736655-18505700-9d34-11ea-8302-6b48bd8c0991.png "app dashboard")
+>>>>>>> 940233f6f354b8e4039c46bd049dbd13691f0864
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

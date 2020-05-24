@@ -42,7 +42,7 @@ export default class CustomerLogin extends Component {
       name: this.state.name,
       phoneNo: this.state.phoneNo
     };
-    axios.post('http://yupizza-backend.herokuapp.com/api/login/', customer)
+    axios.post('https://yupizza-backend.herokuapp.com/api/login/', customer)
       .then(res => console.log(res.data));
     Swal.fire(
   'Great, Welcome!',

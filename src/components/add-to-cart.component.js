@@ -24,7 +24,7 @@ export default class AddToCart extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:8000/api/saveorder/' + this.props.match.params.id)
+    axios.get('https://yupizza-backend.herokuapp.com/api/saveorder/' + this.props.match.params.id)
       .then(res => {
         this.setState({
           name: res.data.name,
