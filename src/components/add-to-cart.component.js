@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button';
 import axios from 'axios';
 import Row from 'react-bootstrap/Row';
-import PizzaList from "./pizza-list.component";
+// import PizzaList from "./pizza-list.component";
 
 export default class AddToCart extends Component {
 
