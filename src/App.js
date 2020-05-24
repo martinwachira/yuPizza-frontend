@@ -58,11 +58,6 @@ function App() {
                 <Route path="/pizza-list" component={PizzaList} />
                 <Route path="/customer-login" component={CustomerLogin} />
                 <Route path="/add-to-cart/:id" component={AddToCart} />
-
-                {/* <Route exact path='/' component={} />
-                <Route path="/create-expense" component />
-                <Route path="/edit-expense/:id" component />
-                <Route path="/expenses-listing" component /> */}
               </Switch>
             </div>
           </Col>
