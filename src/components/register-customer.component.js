@@ -17,6 +17,7 @@ export default class RegisterCustomer extends Component {
     this.onChangeCustomerEmail = this.onChangeCustomerEmail.bind(this);
     this.onChangeCustomerPhoneNo = this.onChangeCustomerPhoneNo.bind(this);
     this.onChangeCustomerCurrentAddress = this.onChangeCustomerCurrentAddress.bind(this);
+    this.onChangeCustomerPassword = this.onChangeCustomerPassword.bind(this);
     
     this.onSubmit = this.onSubmit.bind(this);
 
@@ -25,24 +26,34 @@ export default class RegisterCustomer extends Component {
       name: '',
       email: '',
       phoneNo: '',
-      currentAddress: ''
+      currentAddress: '',
+      password: ''
     }
   }
 
   onChangeCustomerName(e) {
     this.setState({name: e.target.value})
+    console.log(this.state)
   }
 
   onChangeCustomerEmail(e) {
     this.setState({email: e.target.value})
+    console.log(this.state)
   }
 
   onChangeCustomerPhoneNo(e) {
     this.setState({phoneNo: e.target.value})
+    console.log(this.state)
   }
 
   onChangeCustomerCurrentAddress(e) {
     this.setState({currentAddress: e.target.value})
+    console.log(this.state)
+  }
+
+  onChangeCustomerPassword(e){
+    this.setState({password: e.target.value})
+    console.log(this.state)
   }
 
   onSubmit(e) {
@@ -51,10 +62,11 @@ export default class RegisterCustomer extends Component {
       name: this.state.name,
       email: this.state.email,
       phoneNo: this.state.phoneNo,
-      currentAddress: this.state.currentAddress
+      currentAddress: this.state.currentAddress,
+      password: this.state.password
     };
-    // axios.post('http://localhost:8000/api/addcustomer/', customer)
-    axios.post('https://yupizza-backend.herokuapp.com/api/addcustomer/', customer)
+    axios.post('http://localhost:8000/api/addcustomer/', customer)
+    // axios.post('https://yupizza-backend.herokuapp.com/api/addcustomer/', customer)
       .then(res => console.log(res.data));
     Swal.fire(
   'Welcome!',
@@ -62,7 +74,7 @@ export default class RegisterCustomer extends Component {
   'success'
 )
 
-    this.setState({name: '', email: '', phoneNo: '', currentAddress: ''})
+    this.setState({name: '', email: '', phoneNo: '', currentAddress: '', password: ''})
   }
 
   render() {
@@ -100,7 +112,14 @@ export default class RegisterCustomer extends Component {
                 <Form.Label>Address</Form.Label>
                     <Form.Control required type="text" value={this.state.currentAddress} onChange={this.onChangeCustomerCurrentAddress}/>
              </Form.Group>
-            </Col>         
+            </Col>   
+
+            <Col>
+             <Form.Group controlId="Password">
+                <Form.Label>Password</Form.Label>
+                    <Form.Control placeholder="***" required type="password" value={this.state.password} onChange={this.onChangeCustomerPassword}/>
+             </Form.Group>
+            </Col>        
         </Row>
         <Button variant="primary" size="lg" type="submit">
           Sign up
