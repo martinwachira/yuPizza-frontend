@@ -20,13 +20,13 @@ export default class ExpenseTableRow extends Component {
                     <br></br>                    
                  </Form.Group>
                  <Form.Group controlId="Name">                                   
-                 </Form.Group>
-
                  <Link className="add-to-cart" to={"/add-to-cart/" + this.props.obj.id}>
                     <Button variant="primary" size="sm" type="submit">
                      Add to Cart
                     </Button> 
                 </Link> 
+                 </Form.Group>
+
           <br></br>
           <br></br>
         </div>);

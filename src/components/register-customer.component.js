@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import axios from 'axios'
-import CustomerLogin from './customer-login.component';
+// import CustomerLogin from './customer-login.component';
 import Swal from 'sweetalert2';
 
 
@@ -131,7 +131,7 @@ export default class RegisterCustomer extends Component {
     <hr></hr>
     <h4>Login Section</h4>
     <br></br>
-      <CustomerLogin> </CustomerLogin>
+      {/* <CustomerLogin> </CustomerLogin> */}
     </div>);
   }
 }

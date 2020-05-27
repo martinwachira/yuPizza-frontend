@@ -36,12 +36,12 @@ function App() {
               <Link to={"/pizza-list"} className="nav-link">
                   Pizzas
                 </Link>
+                <Link to={"/customer-login"} className="nav-link">
+                  Login
+                </Link>                
                 <Link to={"/register-customer"} className="nav-link">
                   Register
                 </Link>
-                {/* <Link to={"/customer-login"} className="nav-link">
-                  Login
-                </Link> */}                
               </Nav>
             </Nav>
           </Container>

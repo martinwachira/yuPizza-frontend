@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Redirect} from 'react-router-dom';
+// import {Redirect} from 'react-router-dom';
 import {PostCustomerData} from '../services/PostCustomerData';
 import './Login.css';
 
@@ -51,11 +51,13 @@ class CustomerLogin extends Component {
   render() {
 
      if (this.state.redirectToReferrer) {
-      return (<Redirect to={'/pizza-list'}/>)
+       console.log('Logged in')
+      // return (<Redirect to={'/pizza-list'}/>)
     }
    
     if(sessionStorage.getItem('userData')){
-      return (<Redirect to={'/pizza-list'}/>)
+      alert('logged in')
+      // return (<Redirect to={'/pizza-list'}/>)
     }
 
      return (
@@ -84,7 +86,7 @@ class CustomerLogin extends Component {
             </Col>        
         </Row>
         {/* <input type="submit" className="button success" value="Login" onClick={this.login} variant="primary"/> */}
-        <a href="/register-customer">Registration</a>
+        {/* <a href="/register-customer">Registration</a> */}
         <Button variant="primary" size="lg" type="submit" onClick={this.login}>
           Sign In
         </Button>

@@ -1,10 +1,12 @@
-export function PostCustomerData(type, userData) {
-    let BaseURL = 'http://localhost:8000/api/';
+export function PostCustomerData(type, userData) {  
 
-    return new Promise((resolve, reject) =>{
-    
+    const header = new Headers();
+    header.append('Access-Control-Allow-Origin', '*');
+    let BaseURL = 'https://ypizza.herokuapp.com/api/';
+
+    return new Promise((resolve, reject) =>{   
          
-        fetch(BaseURL+type, {
+        fetch(BaseURL+type, header, {
             method: 'POST',
             body: JSON.stringify(userData)
           })
