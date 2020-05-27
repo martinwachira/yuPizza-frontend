@@ -1,5 +1,4 @@
 
-=======
 ![alt text](https://user-images.githubusercontent.com/60017194/82736655-18505700-9d34-11ea-8302-6b48bd8c0991.png "app dashboard")
 
 
