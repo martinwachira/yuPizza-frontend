@@ -18,53 +18,54 @@ import AddToCart from "./components/add-to-cart.component";
 
 
 function App() {
-  return (<Router>
-    <div className="App">
-      <header className="App-header">
-        <Navbar bg="warning" variant="primary">
-         
-          <Container>
+  return (
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          <Navbar bg="warning" variant="primary">
 
-            <Navbar.Brand>
-              <Link to={"/pizza-list"} className="nav-link appName">
-              Yummi Pizza
+            <Container>
+
+              <Navbar.Brand>
+                <Link to={"/pizza-list"} className="nav-link appName">
+                  Yummi Pizza
               </Link>
-            </Navbar.Brand>
+              </Navbar.Brand>
 
-            <Nav className="justify-content-end">
-              <Nav>
-              <Link to={"/pizza-list"} className="nav-link">
-                  Pizzas
+              <Nav className="justify-content-end">
+                <Nav>
+                  <Link to={"/pizza-list"} className="nav-link">
+                    Pizzas
                 </Link>
-                <Link to={"/customer-login"} className="nav-link">
-                  Login
-                </Link>                
-                <Link to={"/register-customer"} className="nav-link">
-                  Register
+                  <Link to={"/customer-login"} className="nav-link">
+                    Login
                 </Link>
+                  <Link to={"/register-customer"} className="nav-link">
+                    Register
+                </Link>
+                </Nav>
               </Nav>
-            </Nav>
-          </Container>
-        </Navbar>
-      </header>
+            </Container>
+          </Navbar>
+        </header>
 
-      <Container>
-        <Row>
-          <Col md={12}>
-            <div className="wrapper">
-              <Switch>
-                <Route exact path='/' component={PizzaList} />
-                <Route path="/register-customer" component={RegisterCustomer} />
-                <Route path="/pizza-list" component={PizzaList} />
-                <Route path="/customer-login" component={CustomerLogin} />
-                <Route path="/add-to-cart/:id" component={AddToCart} />
-              </Switch>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </div>
-  </Router>);
+        <Container>
+          <Row>
+            <Col md={12}>
+              <div className="wrapper">
+                <Switch>
+                  <Route exact path='/' component={PizzaList} />
+                  <Route path="/register-customer" component={RegisterCustomer} />
+                  <Route path="/pizza-list" component={PizzaList} />
+                  <Route path="/customer-login" component={CustomerLogin} />
+                  <Route path="/add-to-cart/:id" component={AddToCart} />
+                </Switch>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </Router>);
 }
 
 export default App;

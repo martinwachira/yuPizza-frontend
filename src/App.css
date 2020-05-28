@@ -1,11 +1,10 @@
- .App {
+.App {
   text-align: center;
-} */
-
-.App-logo {
+}
+*/ .App-logo {
   height: 40vmin;
   pointer-events: none;
-} 
+}
 
 .App-header {
   background-color: #282c34;
@@ -18,38 +17,36 @@
   color: white;
 }
 
-.container-fluid{
+.container-fluid {
   margin: 1em;
   padding: 1em;
 }
 
-.nav-link{
+.nav-link {
   color: whitesmoke;
-  font-family: 'Chelsea Market', cursive;
+  font-family: "Chelsea Market", cursive;
 }
 
-.pName{
+.pName {
   color: green;
 }
 
-.content{
+.content {
   margin: 5px;
   text-align: center;
   color: red;
 }
 
-img{
+img {
   border-radius: 20px;
   width: 200px;
   height: 150px;
 }
 
-Button{
+Button {
   margin-bottom: 0px;
 }
 
-.oPizza{
+.oPizza {
   justify-content: center;
 }
-
-
